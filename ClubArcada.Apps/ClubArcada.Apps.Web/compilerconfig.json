@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/Site.css",
+    "inputFile": "Content/Site.scss"
+  },
+  {
+    "outputFile": "Content/slippry.css",
+    "inputFile": "Content/slippry.scss"
+  }
+]
