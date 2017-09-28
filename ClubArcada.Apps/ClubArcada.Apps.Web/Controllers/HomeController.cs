@@ -20,11 +20,31 @@ namespace ClubArcada.Apps.Web.Controllers
             return View();
         }
 
-        [allowGet]
         public JsonResult GetVeryAction()
         {
             var t = Common.BusinessObjects.Data.TournamentData.GetUpcomingList(CR, 2);
-            return Json(t);
+            return Json(t, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetUpcomingEvents()
+        {
+            var t = Common.BusinessObjects.Data.TournamentData.GetUpcomingList(CR);
+            return Json(t, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetLatestEvents()
+        {
+            var t = Common.BusinessObjects.Data.TournamentData.GetRecentList(CR, 5);
+            return Json(t, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetBanners()
+        {
+            var t = Common.BusinessObjects.Data.BannerData.GetList(CR, true, false);
+
+            var light = t.Item.Select(b => new BannerLight(b));
+
+            return Json(light, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -17,10 +17,12 @@ namespace ClubArcada.Apps.Web
                       "~/Scripts/require.js",
                       "~/Scripts/parallax.min.js",
                       "~/Scripts/respond.js",
+                      "~/Scripts/slippry.js",
                       "~/Scripts/Site.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/slippry.css",
                       "~/Content/Site.css"));
         }
     }
