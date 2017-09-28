@@ -1,0 +1,72 @@
+﻿.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
+{
+    border-color:lightgray;
+    font-size:11px;
+}
+
+
+
+.table thead
+{
+    background-color:#DEDEDE;
+    color:black;
+    padding:0px;
+    margin:0px;
+    border:solid 1px lightgray;
+}
+
+.table thead tr, .table thead tr th
+{
+    border:solid 0px lightgray;
+    padding:0px;
+    margin:0px;
+}
+
+.table thead tr th
+{
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-weight:bold;
+}
+
+.table tbody tr td
+{
+    border-right:solid 1px lightgray !important;
+    padding-left:5px;
+    padding-top:4px;
+    padding-bottom:4px;
+
+}
+
+.table thead tr th,.table tbody tr th
+{
+    border-right:solid 1px lightgray !important;
+
+}
+
+.table tbody
+{
+    border:solid 1px lightgray !important;
+}
+
+@media screen and (max-width: 667px) {
+    .table thead tr th
+    {
+        padding-top:1px;
+        padding-bottom:1px;
+        font-size:8px;
+    }
+    .table tbody tr td
+    {
+        padding-top:2px;
+        padding-bottom:2px;
+        font-size:8px;
+    }
+}
+
+.table a,.table a:active, .table a:visited{
+    color:black !important;
+    text-decoration:underline;
+}

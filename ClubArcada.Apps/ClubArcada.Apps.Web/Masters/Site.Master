@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ClubArcada.Apps.Web.Masters.Site" %>
+
+<%@ Register TagName="NavigationCtrl" TagPrefix="uc" Src="~/Controls/NavigationCtrl.ascx" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Club Arcada</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <%--<link href="../Scripts/angular-csp.css" rel="stylesheet" />--%>
+    <link href="../Content/site.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.1.1.js"></script>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/jquery.countdown.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/site.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body ng-app="CAapp">
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="cplNavigation" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="container">
+                <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

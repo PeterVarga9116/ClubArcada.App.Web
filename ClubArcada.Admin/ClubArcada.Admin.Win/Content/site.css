@@ -1,0 +1,148 @@
+﻿html {
+  overflow-y: scroll;
+}
+
+body {
+}
+
+.container
+{
+    width:100%;
+}
+
+.navbar
+{
+    margin-bottom:0px;
+    border-radius: 0px;
+}
+.breadcrumb
+{
+    border-radius: 0px;
+    background-color:#DEDEDE;
+}
+
+.divPlayerOnline
+{
+    float:left;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    background-color:green;
+    margin-right:4px;
+    margin-top:2px;
+}
+
+.divPlayerOffline
+{
+    float:left;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    background-color:gray;
+    margin-right:4px;
+    margin-top:2px;
+}
+
+.divSectionTitle
+{
+    font-weight:bold;
+    text-transform:uppercase;
+    border-bottom:solid 1px darkgray;
+    margin-bottom:5px;
+}
+
+.thTable
+{
+    width:98px;
+}
+
+@media screen and (max-width: 667px) {
+    .divSectionTitle {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .divPlayerOffline, .divPlayerOnline
+    {
+        float:left;
+        width:6px;
+        height:6px;
+        border-radius:3px;
+        margin-right:2px;
+        margin-top:2px;
+    }
+
+    .thTable
+    {
+        width:70px;
+    }
+
+}
+
+.form-group label{
+    margin-bottom:-4px;
+    font-weight:normal;
+    font-size:11px;
+    color:gray;
+    margin-left:1px;
+    text-transform:uppercase;
+}
+
+.form-group input
+{
+    border-radius:2px;
+    margin-top:-3px;
+}
+
+.ca-form .form-group
+{
+    margin-bottom:4px !important;
+}
+
+.section
+{
+    margin-bottom:15px !important;
+}
+
+.input-group-addon
+{
+    margin-top:-6px !important;
+    height:40px;
+    padding:0;
+}
+
+.requestUnresolved
+{
+    background-color:#FAEBEB;
+}
+.requestResolved
+{
+    background-color:#E8FAE8;
+}
+
+.ajaxLoader{
+    width:26px;
+    height:26px;
+    background-image:url(ajax-loader.gif);
+    position:absolute;
+    right:6px;
+    top:58px;
+    background-size:cover;
+    /*z-index:1;*/
+    display:none;
+}
+
+.icon_user_verified_16x16
+{
+    background-image:url("Icons/user_verified_16x16.png");
+    width:16px;
+    height:16px;
+}
+
+.icon_personal_16x16
+{
+    background-image:url("Icons/personal_16x16.png");
+    width:16px;
+    height:16px;
+}

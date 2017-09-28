@@ -1,0 +1,202 @@
+﻿* {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+body, html {
+    background-color: black;
+}
+body
+{
+    padding-top: 70px;
+}
+
+.navbar {
+    border-bottom: solid 1px red;
+    border-radius: 0;
+}
+
+.nav > li > a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+}
+
+    .nav > li > a:hover {
+        text-decoration: underline;
+    }
+
+.container {
+    width: 100% !important;
+}
+
+.txtContent {
+    color: #EEEEEE;
+    background-color: black;
+    outline: none;
+    resize: none;
+    border: 1px solid white;
+    width: 100%;
+    cursor: default;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+.infoCover {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+}
+
+    .infoCover li {
+        color: white;
+        margin-bottom: 6px;
+        padding: 5px;
+        padding-bottom: 0px;
+        padding-top: 2px;
+        font-size: 12px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+.pulse {
+    animation: pulse 3s linear infinite;
+}
+
+.pulseRed, .pulseRed a {
+    animation: pulseRed 3s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: gold;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes pulseRed {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.sectionTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.linkTour, .linkTour:active, .linkTour:visited {
+    color: white !important;
+    text-decoration: none;
+}
+
+    .linkTour :visited {
+        text-decoration: underline;
+    }
+
+.divTournamentTitle {
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*@media (max-width: 1024px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}*/
+
+.breadcrumb {
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+    .breadcrumb a, .breadcrumb a:visited, .breadcrumb a:active {
+        color: white;
+        text-decoration: none;
+    }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+
+.tableResults
+{
+    color:white;
+}
+
+.tableResults thead tr th
+{
+    font-size:12px;
+    font-weight:bold;
+    padding-bottom:2px;
+    margin:0;
+}
+
+.tableResults tbody tr td
+{
+    border-top:0;
+    border-bottom:1px solid gray;
+    font-size:12px;
+    padding-top:3px;
+    padding-bottom:1px;
+}
